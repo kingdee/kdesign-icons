@@ -1,6 +1,6 @@
 {
   "name": "@kesign/icons-vue",
-  "version": "1.0.2-alpha.0",
+  "version": "1.0.3-alpha.0",
   "description": "Vue components of Kdesign Icons collection",
   "main": "dist/index.js",
   "type": "module",
@@ -24,6 +24,5 @@
   },
   "dependencies": {
     "vue": "^3.2.47"
-  },
-  "gitHead": "b825381dec42dabc1c5c5c0847e0abb536fcd8ec"
+  }
 }
