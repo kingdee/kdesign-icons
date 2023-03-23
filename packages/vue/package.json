@@ -1,6 +1,6 @@
 {
   "name": "@kesign-icons/vue",
-  "version": "1.0.4-alpha.3",
+  "version": "1.0.4-alpha.4",
   "description": "Vue components of Kdesign Icons collection",
   "main": "dist/index.js",
   "type": "module",
