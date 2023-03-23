@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "vue": "^3.2.0"
   },
@@ -24,5 +24,6 @@
   },
   "dependencies": {
     "vue": "^3.2.47"
-  }
+  },
+  "gitHead": "b825381dec42dabc1c5c5c0847e0abb536fcd8ec"
 }
