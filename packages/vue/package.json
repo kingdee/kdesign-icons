@@ -1,5 +1,5 @@
 {
-  "name": "@kesign-icons/vue",
+  "name": "@kdsign-icons/vue",
   "version": "1.0.4-alpha.11",
   "description": "Vue components of Kdesign Icons collection",
   "main": "dist/index.js",
@@ -28,5 +28,5 @@
   "dependencies": {
     "vue": "^3.2.47"
   },
-  "gitHead": "dae310d8a0e6b20ae149fe06849fc6abf2b40ba6"
+  "gitHead": "3b15414b8ed6ae8f64f75de9c9ccb93fb0a40579"
 }
