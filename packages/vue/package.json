@@ -8,7 +8,8 @@
   },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "author": "",
   "license": "MIT",
@@ -16,6 +17,9 @@
     "vue": "^3.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-terser": "^0.4.0",
     "@types/gulp-babel": "^6.1.30",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
@@ -23,10 +27,14 @@
     "gulp-babel": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue": "^6.0.0",
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.2.0"
   },
   "gitHead": "9fd88a96b48f0ff750f4e3db2e2760b4704aa159"
 }

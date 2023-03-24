@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import {Abs} from '../../packages/vue/src/index'
+<script setup>
+import {Abs} from '../../packages/vue/dist/index'
 </script>
 
 <template>

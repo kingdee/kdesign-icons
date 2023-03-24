@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@kdesign-icons/vue": "^1.0.4-y.1",
     "vue": "^3.2.47"
   },
   "devDependencies": {

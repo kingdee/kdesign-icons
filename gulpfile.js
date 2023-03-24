@@ -29,6 +29,10 @@ function isPathStartTag(str) {
     const regex = /<path/;
     return regex.test(str);
 }
+function isComment(str) {
+    const regex = /<!--/
+    return regex.test(str)
+}
 function replaceFillAttr(str) {
     const regex = /fill="#([a-fA-F0-9]{6})"/g; 
     return str.replace(regex, ':fill="color"');
@@ -49,11 +53,14 @@ function generateSVGfn() {
         const componentName = camelcase(basename, { pascalCase: true });
         let newStr = "";
         lines.forEach((line, index) => {
+            
             if (isSvgStartTag(line)) {
                 newStr += replaceSize(line) + `\n`;
             } else if (isPathStartTag(line)) {
                 newStr += replaceFillAttr(line) + "\n";
-            } else {
+            } else if (isComment(line)) {
+                return
+            }else {
                 newStr += line + `\n`;
             }
         });
