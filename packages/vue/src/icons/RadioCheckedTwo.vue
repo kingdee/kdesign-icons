@@ -1,42 +1,53 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>211.移动复选未选</title>
-    <g
-      id="211.移动复选未选"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="移动复选未选"
-        transform="translate(4.000000, 4.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="211.移动复选未选"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,1.20000001 C6.03532471,1.20000001 1.20000001,6.03532471 1.20000001,12 C1.20000001,17.9646752 6.03532471,22.8 12,22.8 C17.9646752,22.8 22.8,17.9646752 22.8,12 C22.8,6.03532471 17.9646752,1.20000001 12,1.20000001 Z"
-          id="形状"
-          :fill="color"
-        ></path>
+        <g
+          id="移动复选未选"
+          transform="translate(4.000000, 4.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,1.20000001 C6.03532471,1.20000001 1.20000001,6.03532471 1.20000001,12 C1.20000001,17.9646752 6.03532471,22.8 12,22.8 C17.9646752,22.8 22.8,17.9646752 22.8,12 C22.8,6.03532471 17.9646752,1.20000001 12,1.20000001 Z"
+            id="形状"
+            :fill="color"
+          ></path>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
-  name: 'RadioChecked2',
+  name: 'RadioCheckedTwo',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

@@ -1,42 +1,53 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>1146-减少_线</title>
-    <g
-      id="1146-减少_线"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(4.000000, 14.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="1146-减少_线"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M0.923076923,0 L23.0769231,0 C23.5867243,0 24,0.413275658 24,0.923076923 C24,1.43287819 23.5867243,1.84615385 23.0769231,1.84615385 L0.923076923,1.84615385 C0.413275628,1.84615385 0,1.43287819 0,0.923076923 C0,0.413275658 0.413275628,0 0.923076923,0 Z"
-          id="路径"
-          :fill="color"
-        ></path>
+        <g
+          id="编组"
+          transform="translate(4.000000, 14.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M0.923076923,0 L23.0769231,0 C23.5867243,0 24,0.413275658 24,0.923076923 C24,1.43287819 23.5867243,1.84615385 23.0769231,1.84615385 L0.923076923,1.84615385 C0.413275628,1.84615385 0,1.43287819 0,0.923076923 C0,0.413275658 0.413275628,0 0.923076923,0 Z"
+            id="路径"
+            :fill="color"
+          ></path>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'ReduceLine',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

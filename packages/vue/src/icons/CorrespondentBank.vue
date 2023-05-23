@@ -1,41 +1,52 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>478.代理行@1x</title>
-    <g
-      id="478.代理行"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(4.000000, 5.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="478.代理行"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <polygon
-          id="路径"
-          points="22.6569543 19.9038462 22.6569543 18.5769231 21.3248597 18.5769231 21.3248597 6.63461538 23.9890488 6.63461538 24 4.29055343 12.8550178 0 11.1311308 0 0 4.29055343 0 6.64431082 2.70139944 6.64431082 2.70139944 18.6072229 1.33209455 18.6072229 1.33209455 19.8101512 0.011346816 19.8101512 0.011346816 21.2307692 23.9890488 21.2307692 23.9890488 19.8101512"
-        ></polygon>
+        <g
+          id="编组"
+          transform="translate(4.000000, 5.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <polygon
+            id="路径"
+            points="22.6569543 19.9038462 22.6569543 18.5769231 21.3248597 18.5769231 21.3248597 6.63461538 23.9890488 6.63461538 24 4.29055343 12.8550178 0 11.1311308 0 0 4.29055343 0 6.64431082 2.70139944 6.64431082 2.70139944 18.6072229 1.33209455 18.6072229 1.33209455 19.8101512 0.011346816 19.8101512 0.011346816 21.2307692 23.9890488 21.2307692 23.9890488 19.8101512"
+          ></polygon>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'CorrespondentBank',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

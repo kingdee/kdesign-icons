@@ -1,42 +1,52 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>879.智能方案</title>
-    <g
-      id="879.智能方案"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(4.000000, 2.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="980.上升"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M5.45372714e-16,1.46484211 C5.45372714e-16,0.654315789 0.655789474,-8.18059071e-16 1.47368421,-8.18059071e-16 L22.1052632,-8.18059071e-16 C22.9187368,-8.18059071e-16 23.5789474,0.663157895 23.5789474,1.46484211 L23.5789474,26.5322105 C23.5789474,27.3427368 22.9231579,28 22.1052632,28 L1.47368421,28 C0.660210526,28 5.45372714e-16,27.3353684 5.45372714e-16,26.5336842 L5.45372714e-16,1.46631579 L5.45372714e-16,1.46484211 Z M2.94736842,4.42547368 L2.94736842,8.84652632 L7.36842105,8.84652632 L7.36842105,4.42547368 L2.94736842,4.42547368 Z M10.3157895,5.89915789 L10.3157895,7.37284211 L20.6315789,7.37284211 L20.6315789,5.89915789 L10.3157895,5.89915789 Z M2.94736842,11.7938947 L2.94736842,16.2149474 L7.36842105,16.2149474 L7.36842105,11.7938947 L2.94736842,11.7938947 Z M10.3157895,13.2675789 L10.3157895,14.7412632 L20.6315789,14.7412632 L20.6315789,13.2675789 L10.3157895,13.2675789 Z M2.94736842,19.1623158 L2.94736842,23.5833684 L7.36842105,23.5833684 L7.36842105,19.1623158 L2.94736842,19.1623158 Z M10.3157895,20.636 L10.3157895,22.1096842 L20.6315789,22.1096842 L20.6315789,20.636 L10.3157895,20.636 Z"
-          id="形状"
-          :fill="color"
-        ></path>
+        <g
+          id="编组"
+          transform="translate(5.000000, 2.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <polygon
+            id="路径"
+            points="10.5 0 21 10.5 12.25 10.5 12.25 28 8.75 28 8.75 10.5 0 10.5"
+          ></polygon>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'Rise',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

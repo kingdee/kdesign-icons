@@ -1,54 +1,65 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>1248-右展开</title>
-    <g
-      id="1248-右展开"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(6.000000, 4.000000)"
-        fill-rule="nonzero"
+        id="1248-右展开"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M12,0 L19.7142857,0 L19.7142857,0 L19.7142857,24 L12,24 C5.372583,24 0,18.6274169 0,12 C0,5.372583 5.372583,0 12,0 Z"
-          id="矩形"
-          :fill="color"
-          transform="translate(9.857143, 12.000000) scale(-1, 1) translate(-9.857143, -12.000000) "
-        ></path>
         <g
-          id="左翻页备份-3"
-          transform="translate(8.250000, 12.000000) scale(-1, 1) rotate(90.000000) translate(-8.250000, -12.000000) translate(2.892857, 8.250000)"
-          fill="#FFFFFF"
+          id="编组"
+          transform="translate(6.000000, 4.000000)"
+          fill-rule="nonzero"
         >
           <path
-            d="M6.65376644,6.77244122 C5.9383451,7.74278026 4.77803348,7.74225888 4.06299655,6.77244122 L0.365127736,1.75695425 C-0.350293623,0.786615213 0.0150827712,9.74458609e-16 1.20330644,9.74458609e-16 L9.51345653,9.74458609e-16 C10.6917912,9.74458609e-16 11.0666722,0.787136594 10.3516353,1.75695425 L6.65376644,6.77244122 Z"
-            id="Path-Copy-2"
-            transform="translate(5.357143, 3.750000) scale(-1, 1) translate(-5.357143, -3.750000) "
+            d="M12,0 L19.7142857,0 L19.7142857,0 L19.7142857,24 L12,24 C5.372583,24 0,18.6274169 0,12 C0,5.372583 5.372583,0 12,0 Z"
+            id="矩形"
             :fill="color"
+            transform="translate(9.857143, 12.000000) scale(-1, 1) translate(-9.857143, -12.000000) "
           ></path>
+          <g
+            id="左翻页备份-3"
+            transform="translate(8.250000, 12.000000) scale(-1, 1) rotate(90.000000) translate(-8.250000, -12.000000) translate(2.892857, 8.250000)"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M6.65376644,6.77244122 C5.9383451,7.74278026 4.77803348,7.74225888 4.06299655,6.77244122 L0.365127736,1.75695425 C-0.350293623,0.786615213 0.0150827712,9.74458609e-16 1.20330644,9.74458609e-16 L9.51345653,9.74458609e-16 C10.6917912,9.74458609e-16 11.0666722,0.787136594 10.3516353,1.75695425 L6.65376644,6.77244122 Z"
+              id="Path-Copy-2"
+              transform="translate(5.357143, 3.750000) scale(-1, 1) translate(-5.357143, -3.750000) "
+              :fill="color"
+            ></path>
+          </g>
         </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'ExpandRight',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

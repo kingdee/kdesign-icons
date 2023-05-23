@@ -1,42 +1,53 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>995.置顶</title>
-    <g
-      id="995.置顶"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(4.000000, 2.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="1096.文本居中"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M23.0961344,16.0418461 C23.6797099,16.6233846 23.9318267,17.3212308 23.3481344,17.9027692 C22.7622882,18.4864615 22.0665959,18.2366154 21.4850575,17.6507692 L12.9709036,9.13876922 L12.9709036,26.6215385 C12.9709036,27.384 12.6413651,28 11.8810575,28 C11.1185959,28 10.6921344,27.384 10.6921344,26.6215385 L10.6921344,9.13876922 L2.18444206,17.64 C1.6029036,18.2215385 0.926595914,18.4907692 0.340749751,17.9092308 C-0.247250262,17.3233846 -0.0124810269,16.6126154 0.575518986,16.0310769 L10.7093651,5.89507693 C10.7093651,5.89507693 11.3167498,5.20153844 11.775519,5.20153844 C12.3247498,5.20153844 12.9644421,5.90584615 12.9644421,5.90584615 L23.0961344,16.0418461 L23.0961344,16.0418461 Z M22.0838267,2.15384616 L1.49521127,2.15384616 C0.547518969,2.15384616 0.000442075237,1.88030769 0.000442075237,1.09846153 C0.000442075237,0.31876921 0.474288246,0 1.49736512,0 L22.0816728,0 C23.0293651,0 23.5785959,0.299384632 23.5785959,1.07692306 C23.5785959,1.85661538 23.0121344,2.15384616 22.0816728,2.15384616 L22.0838267,2.15384616 Z"
-          id="形状"
-          :fill="color"
-        ></path>
+        <g
+          id="编组"
+          transform="translate(2.000000, 6.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M0,0 L28,0 L28,1.55555556 L0,1.55555556 L0,0 Z M0,12.4444444 L28,12.4444444 L28,14 L0,14 L0,12.4444444 Z M4.66666668,6.22222221 L23.3333333,6.22222221 L23.3333333,7.77777777 L4.66666668,7.77777777 L4.66666668,6.22222221 Z M4.66666668,18.6666666 L23.3333333,18.6666666 L23.3333333,20.2222222 L4.66666668,20.2222222 L4.66666668,18.6666666 Z"
+            id="形状"
+            :fill="color"
+          ></path>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'TextCentering',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

@@ -1,41 +1,52 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>1397-通用图标2</title>
-    <g
-      id="1397-通用图标2"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(4.000000, 5.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="1397-通用图标2"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <polygon
-          id="路径"
-          points="12 19.1753968 4.58359213 22.8253563 5.76311383 14.6440338 -1.79306123e-16 8.71851033 8.14539236 7.31213442 12 0 15.8546076 7.31213442 24 8.71851033 18.2368861 14.6440338 19.4164078 22.8253563"
-        ></polygon>
+        <g
+          id="编组"
+          transform="translate(4.000000, 5.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <polygon
+            id="路径"
+            points="12 19.1753968 4.58359213 22.8253563 5.76311383 14.6440338 -1.79306123e-16 8.71851033 8.14539236 7.31213442 12 0 15.8546076 7.31213442 24 8.71851033 18.2368861 14.6440338 19.4164078 22.8253563"
+          ></polygon>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
-  name: 'UniversalIcons2',
+  name: 'UniversalIconsTwo',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

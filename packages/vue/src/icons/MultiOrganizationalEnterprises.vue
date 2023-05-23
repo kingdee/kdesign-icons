@@ -1,42 +1,53 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>770.任职资格认证</title>
-    <g
-      id="770.任职资格认证"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(3.000000, 1.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="851.多组织企业"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M25.9891184,4.3610398 L24.7014505,4.33907005 C24.6724329,4.33907005 21.788784,4.28048404 18.810825,3.11607504 C15.7566963,1.92237303 13.7871097,0.552911493 13.7689737,0.53826499 L12.9927449,0 L12.2201447,0.541926616 C12.2020087,0.552911493 10.2324221,1.92603466 7.17829194,3.11973666 C4.20396161,4.28414566 1.31668547,4.34273167 1.2912951,4.34273167 L0,4.36470143 L0,16.9754666 C0,23.3064806 8.45507826,30 13,30 C17.5485489,30 26,23.3064806 26,16.9754666 L25.9891184,4.3610398 Z M7.47935217,22.6290738 L7.47935217,10.4101056 L6.32589348,10.4101056 L6.32589348,9.30062248 L10.9433599,9.30062248 L10.9433599,14.8517027 L16.7505584,9.30062248 L21.3281242,9.30062248 L7.47935217,22.6290738 Z"
-          id="形状"
-          :fill="color"
-        ></path>
+        <g
+          id="编组"
+          transform="translate(4.000000, 2.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M21,25.2 L23.8518,25.2 L23.8518,28 L7.77156117e-16,28 L7.77156117e-16,25.2 L2.8,25.2 L2.8,1.4 C2.8,0.62680135 3.42680135,0 4.2,0 L19.6,0 C20.3731986,0 21,0.62680135 21,1.4 L21,25.2 Z M8.4,25.2 L15.4,25.2 L15.4,19.6 L8.4,19.6 L8.4,25.2 L8.4,25.2 Z M7,12.6 L7,15.4 L16.8,15.4 L16.8,12.6 L7,12.6 Z M7,5.6 L7,8.4 L16.8,8.4 L16.8,5.6 L7,5.6 Z"
+            id="形状"
+            :fill="color"
+          ></path>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'MultiOrganizationalEnterprises',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

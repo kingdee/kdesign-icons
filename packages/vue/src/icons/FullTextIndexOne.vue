@@ -1,42 +1,53 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>773.干部退出</title>
-    <g
-      id="773.干部退出"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(1.885874, 2.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="773.干部退出"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M28,12.18 L22.6519664,17.1080364 L22.6519664,13.9160714 L13.86,13.9160714 L13.86,10.4439314 L22.651965,10.4439314 L22.651965,7.2519664 L28,12.18 Z M18.8719664,1.1480364 L2.74393,1.1480364 L11.34,4.7880364 L11.34,22.0360714 L18.871965,22.0360714 L18.871965,15.091965 L20.131965,15.091965 L20.131965,23.211965 L11.34,23.211965 L11.34,28 L0,23.2119664 L0,0 L20.131965,0 L20.131965,9.29607 L18.871965,9.29607 L18.871965,1.148035 L18.8719664,1.1480364 Z"
-          id="形状"
-          :fill="color"
-        ></path>
+        <g
+          id="编组"
+          transform="translate(1.885874, 2.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M28,12.18 L22.6519664,17.1080364 L22.6519664,13.9160714 L13.86,13.9160714 L13.86,10.4439314 L22.651965,10.4439314 L22.651965,7.2519664 L28,12.18 Z M18.8719664,1.1480364 L2.74393,1.1480364 L11.34,4.7880364 L11.34,22.0360714 L18.871965,22.0360714 L18.871965,15.091965 L20.131965,15.091965 L20.131965,23.211965 L11.34,23.211965 L11.34,28 L0,23.2119664 L0,0 L20.131965,0 L20.131965,9.29607 L18.871965,9.29607 L18.871965,1.148035 L18.8719664,1.1480364 Z"
+            id="形状"
+            :fill="color"
+          ></path>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
-  name: 'FullTextIndex1',
+  name: 'FullTextIndexOne',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>

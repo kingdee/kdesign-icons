@@ -1,42 +1,53 @@
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 32 32"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
-    <title>1086.清除</title>
-    <g
-      id="1086.清除"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      :width="size"
+      :height="size"
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="编组"
-        transform="translate(2.000000, 4.000000)"
-        fill="#000000"
-        fill-rule="nonzero"
+        id="806.单据类型"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
       >
-        <path
-          d="M1.6346027,16.8645682 L6.56722745,21.7769709 L15.5582621,21.7691932 L19.4206738,18.0825579 L9.99564275,8.70108206 L1.6346027,16.8645682 Z M17.7546879,21.7769709 L26.4439474,21.7769709 L26.4439474,23.3325133 L15.5551511,23.3325133 L15.5551511,23.3247356 L5.92634401,23.3325133 L0.402613167,17.8336711 C0.144898737,17.5773332 3.73016587e-16,17.2288372 3.73016587e-16,16.865346 C3.73016587e-16,16.5018548 0.144898737,16.1533588 0.402613167,15.8970209 L15.9673698,0.400708167 C16.5054084,-0.133569389 17.3737591,-0.133569389 17.9117977,0.400708167 L27.5966043,10.040404 C27.8547971,10.2968031 28,10.6456333 28,11.0095069 C28,11.3733805 27.8547971,11.7222107 27.5966043,11.9786098 L17.7546879,21.7769709 Z"
-          id="形状"
-          :fill="color"
-        ></path>
+        <g
+          id="编组"
+          transform="translate(4.000000, 2.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M1.55555556,0 L21.7777778,0 C22.6368874,0 23.3333333,0.696445945 23.3333333,1.55555556 L23.3333333,26.4444444 C23.3333333,27.3035541 22.6368874,28 21.7777778,28 L1.55555556,28 C0.696445945,28 0,27.3035541 0,26.4444444 L0,1.55555556 C0,0.696445945 0.696445945,0 1.55555556,0 Z M4.66666667,14 L4.66666667,15.5555556 L18.6666667,15.5555556 L18.6666667,14 L4.66666667,14 Z M4.66666667,18.6666667 L4.66666667,20.2222222 L18.6666667,20.2222222 L18.6666667,18.6666667 L4.66666667,18.6666667 Z M12.4444444,0 L12.4444444,9.33333333 L16.3613333,6.22222222 L20.2222222,9.33333333 L20.2222222,0 L12.4444444,0 Z"
+            id="形状"
+            :fill="color"
+          ></path>
+        </g>
       </g>
-    </g>
-  </svg>
+    </svg>
+  </icon-wrapper>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
 export default defineComponent({
   name: 'DocumentType',
+  components: { iconWrapper },
   props: {
-    size: Number,
-    color: String,
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
   },
 });
 </script>
