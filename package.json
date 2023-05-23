@@ -1,26 +1,33 @@
 {
-  "name": "kesign-icons",
+  "name": "kdesign-icons",
   "private": true,
-  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "gulp": "gulp --require ts-node/register",
+    "build:react": "yarn workspace @kdcloudjs/kdesign-icons build",
+    "build:vue": "yarn workspace @kdcloudjs/kdesign-icons-vue build"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
     "@babel/register": "^7.21.0",
     "@types/gulp": "^4.0.10",
     "@types/gulp-rename": "^2.0.1",
+    "@types/node": "^18.15.10",
     "@types/through2": "^2.0.38",
-    "camelcase": "^7.0.1",
-    "csv-writer": "^1.6.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "camelcase": "6.3.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean": "^0.4.0",
     "gulp-rename": "^2.0.0",
     "lerna": "^6.5.1",
-    "lodash.template": "^4.5.0",
     "prettier": "^2.8.4",
-    "svgo": "^1.3.2",
     "through2": "^4.0.2",
-    "typescript": "^4.1.5"
-  }
+    "typescript": "^4.1.5",
+    "vinyl": "^3.0.0"
+  },
+  "dependencies": {}
 }
