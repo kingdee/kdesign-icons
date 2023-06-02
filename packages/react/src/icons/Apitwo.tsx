@@ -17,7 +17,7 @@ const Apitwo = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1280Api2"
+          id="1280-api2"
           stroke="none"
           strokeWidth="1"
           fill="none"

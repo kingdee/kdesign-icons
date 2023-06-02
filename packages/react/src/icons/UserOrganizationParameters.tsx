@@ -17,7 +17,7 @@ const UserOrganizationParameters = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="2.唯独组织230"
+          id="2.唯独组织-230"
           stroke="none"
           strokeWidth="1"
           fill="none"

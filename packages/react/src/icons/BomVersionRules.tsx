@@ -17,7 +17,7 @@ const BomVersionRules = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1311BOM版本规则"
+          id="1311-BOM版本规则"
           stroke="none"
           strokeWidth="1"
           fill="none"

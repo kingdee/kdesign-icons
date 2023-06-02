@@ -17,7 +17,7 @@ const Hot = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1468Hot"
+          id="1468-hot"
           stroke="none"
           strokeWidth="1"
           fill="none"

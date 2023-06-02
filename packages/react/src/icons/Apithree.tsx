@@ -17,7 +17,7 @@ const Apithree = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1282Api3"
+          id="1282-api3"
           stroke="none"
           strokeWidth="1"
           fill="none"

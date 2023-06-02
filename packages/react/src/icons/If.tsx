@@ -17,7 +17,7 @@ const If = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1126If"
+          id="1126-if"
           stroke="none"
           strokeWidth="1"
           fill="none"

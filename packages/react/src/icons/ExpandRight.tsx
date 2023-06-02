@@ -35,8 +35,8 @@ const ExpandRight = ({
               transform="translate(9.857143, 12.000000) scale(-1, 1) translate(-9.857143, -12.000000) "
             ></path>
             <g
-              id="左翻页备份3"
-              transform="translate(8.250000, 12.000000) scale(1, 1) rotate(90.000000) translate(8.250000, 12.000000) translate(2.892857, 8.250000)"
+              id="左翻页备份-3"
+              transform="translate(8.250000, 12.000000) scale(-1, 1) rotate(90.000000) translate(-8.250000, -12.000000) translate(2.892857, 8.250000)"
               fill="#FFFFFF"
             >
               <path

@@ -17,7 +17,7 @@ const DynamicFormTwo = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1029.动态表格2"
+          id="1029.动态表格-2"
           stroke="none"
           strokeWidth="1"
           fill="none"

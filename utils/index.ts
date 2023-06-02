@@ -1,4 +1,5 @@
 import {format} from "prettier"
+import camelCaseFn from "../plugins/camelcase";
 
 export const formatCode = (code:string,type:string) => {
     return format(code, {
@@ -56,8 +57,8 @@ export const removeXmlsAttributes = (str:string) => {
     return result
 }
 export const formatJsxAttributes = (str:string) => {
-    const regex = /-(\w)/g;
-    const newStr = str.replace(regex, (match, p1) => p1.toUpperCase());
+    const regex = /[\w-]+(?==)/g;
+    const newStr = str.replace(regex,(match) => camelCaseFn(match));
     return newStr
 }
 export const replaceFillAttr = (str:string,type:string) => {

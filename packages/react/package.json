@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "React components of Kdesign Icons collection",
   "author": "kdesign team",
-  "homepage": "https://github.com/kdcloudone/kdesign-icons#readme",
+  "repository": "https://github.com/kdcloudone/kdesign-icons/tree/master/packages/react",
   "license": "Apache-2.0",
   "main": "lib/index.js",
-  "module": "lib/index.esm.js",
-  "unpkg":"dist/index.umd.js",
+  "module": "es/index.js",
+  "unpkg": "dist/index.umd.js",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
   "keywords": [
     "kdesign",
     "icons",
@@ -17,17 +22,12 @@
     "svg-icons"
   ],
   "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sakurastone/kdesign-icons.git"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "build": "rollup -c"
-  },
-  "bugs": {
-    "url": "https://github.com/kdcloudone/kdesign-icons/issues"
+    "clean": "rimraf dist/* es/* lib/*",
+    "build": "yarn clean && rollup -c"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
@@ -52,6 +52,7 @@
     "postcss-modules": "^6.0.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
+    "rimraf": "^5.0.1",
     "rollup": "2.79.1",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",

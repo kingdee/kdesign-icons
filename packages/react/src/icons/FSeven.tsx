@@ -17,7 +17,7 @@ const FSeven = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1156F7"
+          id="1156-f7"
           stroke="none"
           strokeWidth="1"
           fill="none"

@@ -17,7 +17,7 @@ const ComparisonBetweenHistoricalVersionsOfSvn = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1498SVN历史版本间的比较"
+          id="1498-SVN历史版本间的比较"
           stroke="none"
           strokeWidth="1"
           fill="none"

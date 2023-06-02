@@ -7,7 +7,8 @@
   "scripts": {
     "gulp": "gulp --require ts-node/register",
     "build:react": "yarn workspace @kdcloudjs/kdesign-icons build",
-    "build:vue": "yarn workspace @kdcloudjs/kdesign-icons-vue build"
+    "build:vue": "yarn workspace @kdcloudjs/kdesign-icons-vue build",
+    "build:all": "yarn build:react && yarn build:vue"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
@@ -29,5 +30,8 @@
     "typescript": "^4.1.5",
     "vinyl": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/camelcase": "^5.2.0",
+    "@types/prettier": "^2.7.3"
+  }
 }

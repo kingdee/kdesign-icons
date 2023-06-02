@@ -17,7 +17,7 @@ const BomVersion = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1310BOM版本"
+          id="1310-BOM版本"
           stroke="none"
           strokeWidth="1"
           fill="none"

@@ -17,7 +17,7 @@ const AiInsights = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1136Ai洞察"
+          id="1136-Ai洞察"
           stroke="none"
           strokeWidth="1"
           fill="none"

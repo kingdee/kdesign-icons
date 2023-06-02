@@ -17,7 +17,7 @@ const ApioneOne = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1277Api11"
+          id="1277-api1-1"
           stroke="none"
           strokeWidth="1"
           fill="none"

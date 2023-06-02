@@ -17,7 +17,7 @@ const SvnManagementGrey = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1480SVN管理-灰色"
+          id="1480-SVN管理-灰色"
           stroke="none"
           strokeWidth="1"
           fill="none"

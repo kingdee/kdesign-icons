@@ -17,7 +17,7 @@ const PrintConfigurationCopy = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="885.打印配置Copy"
+          id="885.打印配置-copy"
           stroke="none"
           strokeWidth="1"
           fill="none"

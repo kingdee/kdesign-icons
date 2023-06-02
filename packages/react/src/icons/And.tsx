@@ -17,7 +17,7 @@ const And = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1127Abs"
+          id="1127-abs"
           stroke="none"
           strokeWidth="1"
           fill="none"

@@ -17,7 +17,7 @@ const ApitwoOne = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1279Api21"
+          id="1279-api2-1"
           stroke="none"
           strokeWidth="1"
           fill="none"

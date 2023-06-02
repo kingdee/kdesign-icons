@@ -17,7 +17,7 @@ const WorkingPaperTwo = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1032.工作底稿2"
+          id="1032.工作底稿-2"
           stroke="none"
           strokeWidth="1"
           fill="none"

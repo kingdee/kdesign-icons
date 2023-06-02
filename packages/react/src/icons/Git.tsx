@@ -17,7 +17,7 @@ const Git = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1401Git-"
+          id="1401-git-"
           stroke="none"
           strokeWidth="1"
           fill="none"

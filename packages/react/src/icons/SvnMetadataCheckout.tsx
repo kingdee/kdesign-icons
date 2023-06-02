@@ -17,7 +17,7 @@ const SvnMetadataCheckout = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1499SVN元数据签出"
+          id="1499-SVN元数据签出"
           stroke="none"
           strokeWidth="1"
           fill="none"

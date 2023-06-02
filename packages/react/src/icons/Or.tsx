@@ -17,7 +17,7 @@ const Or = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="11290r"
+          id="1129-0r"
           stroke="none"
           strokeWidth="1"
           fill="none"

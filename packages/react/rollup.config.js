@@ -12,7 +12,7 @@ export default {
       format: "cjs",
     },
     {
-      file: "lib/index.esm.js",
+      file: "es/index.js",
       format: "es",
     },
     {
@@ -20,6 +20,11 @@ export default {
       name:'icons-react',
       format: "umd",
       plugins:[terser()]
+    },
+    {
+      file:'dist/index.umd.min.js',
+      name:'icons-react',
+      format: "umd"
     }
   ],
   plugins: [
@@ -39,5 +44,5 @@ export default {
       clearLine:false
     })
   ],
-  external:['react','react-dom']
+  external:['react','react-dom','prop-types']
 };

@@ -1,26 +1,23 @@
-import { Add, Abs,ArrowDownSolid,ArrowLeftSolid } from "@kdesign-icons/react";
+// import { Add, Abs,ArrowDownSolid,ArrowLeftSolid } from "@kdesign-icons/react";
+import * as icons from "@kdcloudjs/kdesign-icons";
 import "./App.css";
-import {
-  HomeOutlined,
-  LoadingOutlined,
-  SettingFilled,
-  SmileOutlined,
-  SyncOutlined,
-} from "@ant-design/icons";
 
 function App() {
+  console.log(icons);
   return (
     <>
-      <Add color="#d9d9d9" />
-      <Abs />
-      <ArrowDownSolid />
-      <ArrowLeftSolid></ArrowLeftSolid>
-      <HomeOutlined />
-      <SettingFilled />
-      <SmileOutlined />
-      <SyncOutlined spin />
-      <SmileOutlined rotate={180} />
-      <LoadingOutlined />
+      {Object.values(icons).map((item, key) => {
+        const Components = item;
+        return (
+          <div className="icon-item" key={key}>
+            <Components key={key} size='32px' />
+            <div>
+              {key}.
+              {item.displayName}
+            </div>
+          </div>
+        );
+      })}
     </>
   );
 }

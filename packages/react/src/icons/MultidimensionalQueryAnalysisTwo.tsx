@@ -17,7 +17,7 @@ const MultidimensionalQueryAnalysisTwo = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1033.多维查询分析2"
+          id="1033.多维查询分析-2"
           stroke="none"
           strokeWidth="1"
           fill="none"

@@ -4,13 +4,13 @@
 ## Install
 
 ```bash 
-yarn add @kdcloudjs/icons-react
+yarn add @kdcloudjs/kdesign-icons
 ```
 
 ## Usage
 
 ```ts
-import {ArrowRightSolid,ArrowLeftSolid} from '@kdcloudjs/icons-react'
+import {ArrowRightSolid,ArrowLeftSolid} from '@kdcloudjs/kdesign-icons'
 
 //example
 <ArrowRightSolid />

@@ -17,7 +17,7 @@ const New = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1124NEW"
+          id="1124-NEW"
           stroke="none"
           strokeWidth="1"
           fill="none"

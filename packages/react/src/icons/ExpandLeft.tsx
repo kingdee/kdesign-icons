@@ -34,8 +34,8 @@ const ExpandLeft = ({
               fill={color}
             ></path>
             <g
-              id="左翻页备份3"
-              transform="translate(11.464286, 12.000000) rotate(90.000000) translate(11.464286, 12.000000) translate(6.107143, 8.250000)"
+              id="左翻页备份-3"
+              transform="translate(11.464286, 12.000000) rotate(90.000000) translate(-11.464286, -12.000000) translate(6.107143, 8.250000)"
               fill="#FFFFFF"
             >
               <path

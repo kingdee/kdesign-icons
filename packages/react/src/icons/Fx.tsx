@@ -17,7 +17,7 @@ const Fx = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1125Fx"
+          id="1125-fx"
           stroke="none"
           strokeWidth="1"
           fill="none"

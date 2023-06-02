@@ -17,7 +17,7 @@ const FormatFormTwo = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1030.格式表格2"
+          id="1030.格式表格-2"
           stroke="none"
           strokeWidth="1"
           fill="none"

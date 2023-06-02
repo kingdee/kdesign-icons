@@ -1,4 +1,4 @@
-import gulp, { dest, parallel, src } from "gulp";
+import gulp, { dest, src } from "gulp";
 import rename from "gulp-rename";
 import del from "del";
 import glob from "glob";
@@ -30,7 +30,7 @@ function generateCodefn() {
       if (isSvgStartTag(line)) {
         newStr += removeXmlsAttributes(replaceSize(line, "react") + `\n`);
       } else if (isPathStartTag(line)) {
-        newStr += replaceFillAttr(line, "react") + "\n";
+        newStr += formatJsxAttributes(replaceFillAttr(line, "react")) + "\n";
       } else if (isComment(line) || isTitle(line)) {
         return;
       } else {
