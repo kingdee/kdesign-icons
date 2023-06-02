@@ -11,7 +11,7 @@
       "registry": "https://registry.npmjs.org/",
       "npmClientArgs": [
         "--registry=https://registry.npmjs.com/",
-        "--scope=@kdesign-icons"
+        "--scope=@kdcloudjs"
       ]
     }
   }
