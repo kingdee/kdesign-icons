@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "React components of Kdesign Icons collection",
   "author": "kdesign team",
-  "repository": "https://github.com/kdcloudone/kdesign-icons/tree/master/packages/react",
+  "repository": "https://github.com/kdcloudone/kdesign-icons/tree/main/packages/react",
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "module": "es/index.js",

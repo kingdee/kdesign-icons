@@ -1,5 +1,7 @@
 # `Kdesign Icons For React`
 
+[![NPM version](https://img.shields.io/npm/v/@kdcloudjs/kdesign-icons.svg?style=flat)](https://www.npmjs.com/package/@kdcloudjs/kdesign-icons) [![NPM downloads](https://img.shields.io/npm/dm/@kdcloudjs/kdesign-icons?style=flat)](https://www.npmjs.com/package/@kdcloudjs/kdesign-icons)
+
 
 ## Install
 

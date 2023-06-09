@@ -1,5 +1,6 @@
 # `Kdesign Icons For Vue`
 
+[![NPM version](https://img.shields.io/npm/v/@kdcloudjs/kdesign-icons-vue.svg?style=flat)](https://www.npmjs.com/package/@kdcloudjs/kdesign-icons-vue) [![NPM downloads](https://img.shields.io/npm/dm/@kdcloudjs/kdesign-icons-vue?style=flat)](https://www.npmjs.com/package/@kdcloudjs/kdesign-icons-vue)
 
 ## Install
 
