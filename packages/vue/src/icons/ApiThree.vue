@@ -35,7 +35,7 @@
 import { defineComponent } from 'vue';
 import iconWrapper from '../components/base.vue';
 export default defineComponent({
-  name: 'Apithree',
+  name: 'ApiThree',
   components: { iconWrapper },
   props: {
     size: {

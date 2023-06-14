@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve:{
     alias:{
-
+      '@kdcloudjs/kdesign-icons-test':path.resolve('../../packages/react') 
     }
   }
 })

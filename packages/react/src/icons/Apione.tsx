@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconWrapper, SvgIconProps } from '../components/index';
 
-const Apione = ({
+const ApiOne = ({
   size = '1em',
   color = 'currentColor',
   rotate = 0,
@@ -40,5 +40,5 @@ const Apione = ({
     </IconWrapper>
   );
 };
-Apione.displayName = 'Apione';
-export default Apione;
+ApiOne.displayName = 'ApiOne';
+export default ApiOne;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconWrapper, SvgIconProps } from '../components/index';
 
-const Apithree = ({
+const ApiThree = ({
   size = '1em',
   color = 'currentColor',
   rotate = 0,
@@ -40,5 +40,5 @@ const Apithree = ({
     </IconWrapper>
   );
 };
-Apithree.displayName = 'Apithree';
-export default Apithree;
+ApiThree.displayName = 'ApiThree';
+export default ApiThree;

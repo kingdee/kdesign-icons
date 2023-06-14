@@ -17,7 +17,7 @@ const DisplayControls = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1458-显示控件"
+          id="1420-显示控件"
           stroke="none"
           strokeWidth="1"
           fill="none"

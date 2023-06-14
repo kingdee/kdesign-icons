@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconWrapper, SvgIconProps } from '../components/index';
 
-const Apitwo = ({
+const ApiTwo = ({
   size = '1em',
   color = 'currentColor',
   rotate = 0,
@@ -40,5 +40,5 @@ const Apitwo = ({
     </IconWrapper>
   );
 };
-Apitwo.displayName = 'Apitwo';
-export default Apitwo;
+ApiTwo.displayName = 'ApiTwo';
+export default ApiTwo;

@@ -1,5 +1,5 @@
 // import { Add, Abs,ArrowDownSolid,ArrowLeftSolid } from "@kdesign-icons/react";
-import * as icons from "@kdcloudjs/kdesign-icons";
+import * as icons from "@kdcloudjs/kdesign-icons-test";
 import "./App.css";
 
 function App() {

@@ -1,7 +1,8 @@
-# `Kdesign Icons For React`
+# `KDesign Icons For React`
 
 [![NPM version](https://img.shields.io/npm/v/@kdcloudjs/kdesign-icons.svg?style=flat)](https://www.npmjs.com/package/@kdcloudjs/kdesign-icons) [![NPM downloads](https://img.shields.io/npm/dm/@kdcloudjs/kdesign-icons?style=flat)](https://www.npmjs.com/package/@kdcloudjs/kdesign-icons)
 
+KDesign icons是基于金蝶的企业级设计系统Kdesign实现的一套图标组件库，提供超过1400+的图标组件，更多图标请前往金蝶图标资源库https://kingdee.design/resource/iconpage。
 
 ## Install
 

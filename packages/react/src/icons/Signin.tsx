@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconWrapper, SvgIconProps } from '../components/index';
 
-const Signin = ({
+const SignIn = ({
   size = '1em',
   color = 'currentColor',
   rotate = 0,
@@ -40,5 +40,5 @@ const Signin = ({
     </IconWrapper>
   );
 };
-Signin.displayName = 'Signin';
-export default Signin;
+SignIn.displayName = 'SignIn';
+export default SignIn;
