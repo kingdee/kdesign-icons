@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, computed,onMounted } from "vue";
-import {updateCSS} from 'rc-util/lib/Dom/dynamicCSS'
+import {updateCSS} from '../util'
 
 const iconWrapperProps = {
     spin: {
@@ -18,11 +18,7 @@ const iconWrapperProps = {
 };
 const insertStyle = 
 `
-.kdicon {
-    display: inline-flex;
-}
-.kdicon,
-.kdicon-spin {
+.kd-svg-icon {
     display: inline-block;
     color: inherit;
     font-style: normal;
@@ -33,6 +29,14 @@ const insertStyle =
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.kd-svg-icon svg {
+    display:inline-block;
+}
+.kd-svg-icon > * {
+    line-height:1;
+}
+.kd-svg-icon.kd-svg-spin {
     animation: loadingCircle 2s infinite linear;
     -webkit-animation: loadingCircle 2s infinite linear;
 }
@@ -55,8 +59,8 @@ export default defineComponent({
     props: iconWrapperProps,
     setup(props) {
         const iconWrapperClasses = computed(() => [
-            "kdicon",
-            props.spin && "kdicon-spin",
+            "kd-svg-icon",
+            props.spin && "kd-svg-spin",
         ]);
 
         const iconStyle = computed(() => {
@@ -66,9 +70,7 @@ export default defineComponent({
         });
 
         onMounted(()=>{
-            updateCSS(insertStyle,'@kdesign-icons',{
-                prepend:true
-            })
+            updateCSS(insertStyle,'@kdesign-icons-vue-style')
         })
 
         return {

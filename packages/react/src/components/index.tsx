@@ -21,10 +21,7 @@ interface IconWrapperProps {
 
 const iconWrapperStyle = 
 `
-.kdicon {
-  display: inline-flex;
-}
-.kdicon.kdicon-spin {
+.kd-svg-icon {
   display: inline-block;
   color: inherit;
   font-style: normal;
@@ -35,6 +32,14 @@ const iconWrapperStyle =
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.kd-svg-icon svg {
+  display:inline-block;
+}
+.kd-svg-icon > * {
+  line-height:1;
+}
+.kd-svg-icon.kd-svg-spin {
   animation: loadingCircle 2s infinite linear;
   -webkit-animation: loadingCircle 2s infinite linear;
 }
@@ -54,8 +59,8 @@ const iconWrapperStyle =
 `
 
 export const IconWrapper = (props:IconWrapperProps) => {
-  const iconWrapperClassNames = classNames('kdicon',{
-    'kdicon-spin':props.spin
+  const iconWrapperClassNames = classNames('kd-svg-icon',{
+    'kd-svg-spin':props.spin
 })
     useEffect(()=>{
       updateCSS(iconWrapperStyle,'@kdesign-icons',{

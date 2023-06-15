@@ -3,6 +3,7 @@ import vue from "rollup-plugin-vue";
 import babel from "rollup-plugin-babel";
 import progress from "rollup-plugin-progress";
 import terser from '@rollup/plugin-terser'
+import typescript from "@rollup/plugin-typescript";
 
 export default {
     input: "src/index.ts",
@@ -28,6 +29,7 @@ export default {
         }
     ],
     plugins:[
+        typescript(),
         vue(),
         commonjs(),
         babel({
