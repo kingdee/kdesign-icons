@@ -67,6 +67,9 @@ export const IconWrapper = (props:IconWrapperProps) => {
         prepend: true,
       })
     },[])
+    const iconStyle = {
+      transform: `rotate(${props.rotate}deg)`,
+    }
 
-  return <span className={iconWrapperClassNames}>{props.children}</span>;
+  return <span className={iconWrapperClassNames} style={iconStyle}>{props.children}</span>;
 };
