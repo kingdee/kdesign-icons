@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const TotalView = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {

@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const UniversalIconsTwo = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {

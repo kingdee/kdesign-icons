@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const AnalysisManagement = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const AnalysisManagement = ({
             <path
               d="M13.270841,1.47453789 L13.270841,14.7453789 L26.541682,14.7453789 C26.541682,22.074662 20.6001241,28.0162199 13.270841,28.0162199 C5.9415579,28.0162199 0,22.074662 0,14.7453789 C0,7.41609579 5.9415579,1.47453789 13.270841,1.47453789 Z M14.7453789,0 C21.9286393,0.403383657 27.6483816,6.16448574 28,13.3504661 L14.7453789,13.3504661 L14.7453789,0 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

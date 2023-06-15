@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const HandoverApplicationGrey = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const HandoverApplicationGrey = ({
             <path
               d="M3.01028572,17.1428572 L8.57142856,22.2857143 L8.57142856,24 L7.39200001,24 L0.454285698,17.1428572 L-4.28228881e-16,17.1428572 L-4.28228881e-16,15.4285714 L24,15.4285714 L24,17.1428572 L3.01028572,17.1428572 Z M21.0857143,6.85714284 L15.4285714,1.26685715 L15.4285714,-4.28228881e-16 L16.584,-4.28228881e-16 L24,6.85714284 L24,8.57142856 L-4.28228881e-16,8.57142856 L-4.28228881e-16,6.85714284 L21.0857143,6.85714284 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

@@ -64,9 +64,9 @@ export const formatJsxAttributes = (str:string) => {
 export const replaceFillAttr = (str:string,type:string) => {
     const regex = /fill="#([a-fA-F0-9]{6})"/g;
     if(type==="vue") {
-        return str.replace(regex, ':fill="color"');
+        return str.replace(regex, ':fill="fill"');
     }
-    return str.replace(regex, 'fill={color}');
+    return str.replace(regex, 'fill={fill}');
 }
 export const replaceSize = (str:string,type:string) => {
     const regExp = /(width|height)="(\d+)px"/g;

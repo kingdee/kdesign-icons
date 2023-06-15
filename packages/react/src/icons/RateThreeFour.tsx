@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const RateThreeFour = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const RateThreeFour = ({
             <path
               d="M18,23.1428571 C18,23.616244 17.6162441,24 17.1428571,24 L0.857142857,24 C0.383755968,24 0,23.616244 0,23.1428571 L0,0.857142857 C0,0.383755941 0.383755968,0 0.857142857,0 L17.1428571,0 C17.6162441,0 18,0.383755941 18,0.857142857 L18,23.1428571 Z M16.2857143,22.2857143 L16.2857143,1.71428571 L1.71428571,1.71428571 L1.71428571,22.2857143 L16.2857143,22.2857143 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const UniversalIconsSix = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const UniversalIconsSix = ({
             <path
               d="M0,0 L18,0 L18,18 L0,18 L0,0 Z M24,24 L6,24 L6,19.5 L19.5,19.5 L19.5,6 L24,6 L24,24 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

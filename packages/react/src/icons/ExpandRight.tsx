@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const ExpandRight = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -31,7 +31,7 @@ const ExpandRight = ({
             <path
               d="M12,0 L19.7142857,0 L19.7142857,0 L19.7142857,24 L12,24 C5.372583,24 0,18.6274169 0,12 C0,5.372583 5.372583,0 12,0 Z"
               id="矩形"
-              fill={color}
+              fill={fill}
               transform="translate(9.857143, 12.000000) scale(-1, 1) translate(-9.857143, -12.000000) "
             ></path>
             <g
@@ -43,7 +43,7 @@ const ExpandRight = ({
                 d="M6.65376644,6.77244122 C5.9383451,7.74278026 4.77803348,7.74225888 4.06299655,6.77244122 L0.365127736,1.75695425 C-0.350293623,0.786615213 0.0150827712,9.74458609e-16 1.20330644,9.74458609e-16 L9.51345653,9.74458609e-16 C10.6917912,9.74458609e-16 11.0666722,0.787136594 10.3516353,1.75695425 L6.65376644,6.77244122 Z"
                 id="Path-Copy-2"
                 transform="translate(5.357143, 3.750000) scale(-1, 1) translate(-5.357143, -3.750000) "
-                fill={color}
+                fill={fill}
               ></path>
             </g>
           </g>

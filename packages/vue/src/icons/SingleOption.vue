@@ -24,7 +24,7 @@
           <path
             d="M28,1.1513424e-15 L28,21.7777778 C28,23.495997 26.6071081,24.8888889 24.8888889,24.8888889 L0,24.8888889 L28,1.1513424e-15 Z"
             id="路径"
-            :fill="color"
+            :fill="fill"
           ></path>
         </g>
       </g>
@@ -42,7 +42,7 @@ export default defineComponent({
       type: String || Number,
       default: '1em',
     },
-    color: {
+    fill: {
       type: String,
       default: 'currentColor',
     },

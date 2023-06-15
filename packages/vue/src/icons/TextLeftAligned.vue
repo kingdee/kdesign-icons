@@ -24,7 +24,7 @@
           <path
             d="M0,0 L28,0 L28,1.55555556 L0,1.55555556 L0,0 Z M0,12.4444444 L28,12.4444444 L28,14 L0,14 L0,12.4444444 Z M0,6.22222221 L18.6666667,6.22222221 L18.6666667,7.77777777 L0,7.77777777 L0,6.22222221 Z M0,18.6666666 L18.6666667,18.6666666 L18.6666667,20.2222222 L0,20.2222222 L0,18.6666666 Z"
             id="形状"
-            :fill="color"
+            :fill="fill"
           ></path>
         </g>
       </g>
@@ -42,7 +42,7 @@ export default defineComponent({
       type: String || Number,
       default: '1em',
     },
-    color: {
+    fill: {
       type: String,
       default: 'currentColor',
     },

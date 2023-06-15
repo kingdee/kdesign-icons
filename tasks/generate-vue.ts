@@ -54,7 +54,7 @@ function generateCodefn() {
                                 type:String || Number,
                                 default:'1em'
                             },
-                            color:{
+                            fill:{
                                 type:String,
                                 default:'currentColor'
                             },

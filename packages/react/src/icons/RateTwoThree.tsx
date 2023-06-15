@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const RateTwoThree = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const RateTwoThree = ({
             <path
               d="M16,23.2 C16,23.6418278 15.6418278,24 15.2,24 L0.8,24 C0.358172237,24 0,23.6418278 0,23.2 L0,0.8 C0,0.358172211 0.358172237,0 0.8,0 L15.2,0 C15.6418278,0 16,0.358172211 16,0.8 L16,23.2 Z M14.4,22.4 L14.4,1.6 L1.6,1.6 L1.6,22.4 L14.4,22.4 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

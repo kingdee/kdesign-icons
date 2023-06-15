@@ -41,7 +41,7 @@ export default defineComponent({
       type: String || Number,
       default: '1em',
     },
-    color: {
+    fill: {
       type: String,
       default: 'currentColor',
     },

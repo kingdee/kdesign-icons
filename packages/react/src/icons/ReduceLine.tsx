@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const ReduceLine = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const ReduceLine = ({
             <path
               d="M0.923076923,0 L23.0769231,0 C23.5867243,0 24,0.413275658 24,0.923076923 C24,1.43287819 23.5867243,1.84615385 23.0769231,1.84615385 L0.923076923,1.84615385 C0.413275628,1.84615385 0,1.43287819 0,0.923076923 C0,0.413275658 0.413275628,0 0.923076923,0 Z"
               id="路径"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

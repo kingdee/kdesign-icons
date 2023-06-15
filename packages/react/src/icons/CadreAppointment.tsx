@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const CadreAppointment = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const CadreAppointment = ({
             <path
               d="M5.37735849,5.25 L1.79245283,0 L15.4150943,0 L11.8301887,5.25 L17.2075472,21 L8.60377358,28 L0,21 L5.37735849,5.25 Z M14.2107897,7 L19,13.2617184 L17.6836671,16.84375 L14.2107897,7 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

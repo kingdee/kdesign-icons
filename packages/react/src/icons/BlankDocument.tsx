@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const BlankDocument = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const BlankDocument = ({
             <path
               d="M19.0909091,0 C19.3921554,0 19.6363636,0.244208328 19.6363636,0.545454552 L19.6363636,23.4545454 C19.6363636,23.7557917 19.3921554,24 19.0909091,24 L0.545454552,24 C0.244208328,24 0,23.7557917 0,23.4545454 L0,0.545454552 C0,0.244208328 0.244208328,0 0.545454552,0 L19.0909091,0 Z M18.5454546,1.09090908 L1.09090908,1.09090908 L1.09090908,22.9090909 L18.5454546,22.9090909 L18.5454546,1.09090908 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>

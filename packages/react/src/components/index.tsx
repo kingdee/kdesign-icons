@@ -8,7 +8,7 @@ export interface SvgIconProps {
   size?: number | string
 
   // 换肤的颜色数组
-  color?: string
+  fill?: string
   rotate?: number
   spin?: boolean
 }

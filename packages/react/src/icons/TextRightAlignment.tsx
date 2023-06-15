@@ -3,7 +3,7 @@ import { IconWrapper, SvgIconProps } from '../components/index';
 
 const TextRightAlignment = ({
   size = '1em',
-  color = 'currentColor',
+  fill = 'currentColor',
   rotate = 0,
   spin = false,
 }: SvgIconProps) => {
@@ -32,7 +32,7 @@ const TextRightAlignment = ({
             <path
               d="M0,0 L28,0 L28,1.55555556 L0,1.55555556 L0,0 Z M0,12.4444444 L28,12.4444444 L28,14 L0,14 L0,12.4444444 Z M9.33333332,6.22222221 L28,6.22222221 L28,7.77777777 L9.33333332,7.77777777 L9.33333332,6.22222221 Z M9.33333332,18.6666666 L28,18.6666666 L28,20.2222222 L9.33333332,20.2222222 L9.33333332,18.6666666 Z"
               id="形状"
-              fill={color}
+              fill={fill}
             ></path>
           </g>
         </g>
