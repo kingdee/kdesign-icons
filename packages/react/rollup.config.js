@@ -19,14 +19,21 @@ export default {
       file:'dist/index.umd.js',
       name:'icons-react',
       format: "umd",
-      plugins:[terser()]
+      globals: {
+        'react': 'React',
+      },
     },
     {
       file:'dist/index.umd.min.js',
       name:'icons-react',
-      format: "umd"
+      format: "umd",
+      plugins:[terser()],
+      globals: {
+        'react': 'React',
+      },
     }
   ],
+  external:['react'],
   plugins: [
     typescript({
       module: "ESNext",
