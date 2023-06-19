@@ -13,11 +13,12 @@ yarn add @kdcloudjs/kdesign-icons
 ## Usage
 
 ```ts
-import {ArrowRightSolid,ArrowLeftSolid} from '@kdcloudjs/kdesign-icons'
+import {ArrowRightSolid,ArrowLeftSolid,Loading} from '@kdcloudjs/kdesign-icons'
 
 //example
 <ArrowRightSolid />
 <ArrowLeftSolid size={24} fill="#5582f3" />
+<Loading spin />
 ```
 查找或copy图标组件标签可跳转至iconpage https://kingdee.design/resource/iconpage
 ## Props
