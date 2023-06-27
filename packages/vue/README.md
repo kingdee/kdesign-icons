@@ -23,10 +23,10 @@ import {ArrowRightSolid,ArrowLeftSolid,Loading} from '@kdcloudjs/kdesign-icons-v
 查找或copy图标组件标签可跳转至iconpage https://kingdee.design/resource/iconpage
 ## Props
 
-|    prop	 | description  | type  | default | note |
-| ---------- | --- | --- | --- | --- |
-| size |  图标的大小 | string &#124; number |  '1em' |
-| fill |  图标的颜色 | string |  'currentColor' |
-| spin |  是否有旋转动画 | boolean | false |
-| rotate | 图标旋转角度 | number | 0 |
+|    prop	 | description  | type  | default | note       |
+| ---------- | ------------ | ----- | ------- | --------- |
+|   size     |  图标的大小 | string &#124; number |  '1em' | |
+|   fill     |  图标的颜色 | string |  'currentColor' | |
+|   spin     |  是否有旋转动画 | boolean | false | |
+|   rotate   | 图标旋转角度 | number | 0 | |
 

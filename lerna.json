@@ -13,9 +13,6 @@
         "--registry=https://registry.npmjs.com/",
         "--scope=@kdcloudjs"
       ]
-    },
-    "version": {
-      "ignore": ["**/*.md"]
     }
   }
 }
