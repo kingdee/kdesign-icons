@@ -14,4 +14,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_SSH_PRIVATE_KEY }}
         with:
           source-repo: 'git@github.com:kingdee/kdesign-icons.git'
-          destination-repo: 'git@github.com:kingdee/kdesign-icons.git'
+          destination-repo: 'git@gitee.com:kingdee/kdesign-icons.git'
