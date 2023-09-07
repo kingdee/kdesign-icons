@@ -7,7 +7,7 @@
   "unpkg": "dist/index.umd.js",
   "type": "module",
   "author": "kdesign team",
-  "repository": "https://github.com/kdcloudone/kdesign-icons/tree/main/packages/vue",
+  "repository": "https://github.com/kingdee/kdesign-icons/tree/main/packages/vue",
   "license": "Apache-2.0",
   "files": [
     "es",
