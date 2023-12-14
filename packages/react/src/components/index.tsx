@@ -3,17 +3,16 @@ import React,{useEffect} from "react";
 import classNames from 'classnames'
 import {updateCSS} from 'rc-util/lib/Dom/dynamicCSS'
 
-export interface SvgIconProps {
+export interface SvgIconProps extends Omit<React.HTMLProps<HTMLSpanElement>,'size'>  {
   // 图标尺寸大小，默认1em
   size?: number | string
-
   // 换肤的颜色数组
   fill?: string
   rotate?: number
   spin?: boolean
 }
 
-interface IconWrapperProps {
+interface IconWrapperProps extends SvgIconProps {
     rotate?:number
     spin?:boolean
     children:React.JSX.Element
@@ -59,17 +58,18 @@ const iconWrapperStyle =
 `
 
 export const IconWrapper = (props:IconWrapperProps) => {
-  const iconWrapperClassNames = classNames('kd-svg-icon',{
-    'kd-svg-spin':props.spin
-})
+  const { onClick, className,spin,rotate, ...restProps } = props
+  const iconWrapperClassNames = classNames('kd-svg-icon', className,{
+    'kd-svg-spin':spin
+  })
     useEffect(()=>{
       updateCSS(iconWrapperStyle,'@kdesign-icons',{
         prepend: true,
       })
     },[])
     const iconStyle = {
-      transform: `rotate(${props.rotate}deg)`,
+      transform: `rotate(${rotate}deg)`,
     }
 
-  return <span className={iconWrapperClassNames} style={iconStyle}>{props.children}</span>;
+  return <span className={iconWrapperClassNames} style={iconStyle} onClick={onClick} {...restProps}>{props.children}</span>;
 };

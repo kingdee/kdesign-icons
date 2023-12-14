@@ -43,9 +43,9 @@ function generateCodefn() {
                 import React from 'react'
                 import {IconWrapper,SvgIconProps} from '../components/index'
                 
-                const ${componentName} = ({size='1em',fill="currentColor",rotate=0,spin=false}:SvgIconProps) => {
+                const ${componentName} = ({size='1em',fill="currentColor",rotate=0,spin=false, ...restProps}:SvgIconProps) => {
                     return (
-                        <IconWrapper rotate={rotate} spin={spin}>
+                        <IconWrapper rotate={rotate} spin={spin} {...restProps}>
                             ${newStr}
                         </IconWrapper>
                     )

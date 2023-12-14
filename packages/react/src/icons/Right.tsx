@@ -6,9 +6,10 @@ const Right = ({
   fill = 'currentColor',
   rotate = 0,
   spin = false,
+  ...restProps
 }: SvgIconProps) => {
   return (
-    <IconWrapper rotate={rotate} spin={spin}>
+    <IconWrapper rotate={rotate} spin={spin} {...restProps}>
       <svg
         width={size}
         height={size}
