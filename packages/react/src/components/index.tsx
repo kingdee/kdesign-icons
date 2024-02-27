@@ -1,7 +1,7 @@
 
 import React,{useEffect} from "react";
 import classNames from 'classnames'
-import {updateCSS} from 'rc-util/lib/Dom/dynamicCSS'
+import { updateCSS } from "../utils";
 
 export interface SvgIconProps extends Omit<React.HTMLProps<HTMLSpanElement>,'size'>  {
   // 图标尺寸大小，默认1em
@@ -63,9 +63,7 @@ export const IconWrapper = (props:IconWrapperProps) => {
     'kd-svg-spin':spin
   })
     useEffect(()=>{
-      updateCSS(iconWrapperStyle,'@kdesign-icons',{
-        prepend: true,
-      })
+      updateCSS(iconWrapperStyle,'kdesign-icons-style')
     },[])
     const iconStyle = {
       transform: `rotate(${rotate}deg)`,
