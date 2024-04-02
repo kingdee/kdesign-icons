@@ -1,6 +1,6 @@
 {
   "name": "@kdcloudjs/kdesign-icons-vue",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Vue components of Kdesign Icons collection",
   "main": "lib/index.js",
   "module": "es/index.js",
