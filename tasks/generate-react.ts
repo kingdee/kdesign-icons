@@ -17,6 +17,9 @@ import {
   formatBasename,
   removeXmlsAttributes,
   formatJsxAttributes,
+  removeStyleAttributes,
+  isUse,
+  convertXlinkHref,
 } from "../utils";
 
 function generateCodefn() {
@@ -28,9 +31,13 @@ function generateCodefn() {
     let newStr = "";
     lines.forEach((line, index) => {
       if (isSvgStartTag(line)) {
-        newStr += removeXmlsAttributes(replaceSize(line, "react") + `\n`);
+        newStr += removeStyleAttributes(
+          removeXmlsAttributes(replaceSize(line, "react") + `\n`)
+        );
       } else if (isPathStartTag(line)) {
         newStr += formatJsxAttributes(replaceFillAttr(line, "react")) + "\n";
+      } else if (isUse(line)) {
+        newStr += convertXlinkHref(line) + "\n";
       } else if (isComment(line) || isTitle(line)) {
         return;
       } else {

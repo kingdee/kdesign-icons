@@ -1,0 +1,36 @@
+<template>
+  <icon-wrapper :spin="spin" :rotate="rotate">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1024 1024"
+      version="1.1"
+      :width="size"
+      :height="size"
+    >
+      <path
+        d="M500 62.5C741.624578 62.5 937.5 258.375422 937.5 500C937.5 741.624578 741.624578 937.5 500 937.5C258.375422 937.5 62.5 741.624578 62.5 500C62.5 258.375422 258.375422 62.5 500 62.5zM555.119334 226.130664C531.389563 202.40089 492.915994 202.40089 469.186219 226.130664L226.130664 469.186219C202.40089 492.915994 202.40089 531.389563 226.130664 555.119334C249.860439 578.849109 288.334005 578.849109 312.06378 555.119334L451.388888 415.794228L451.388888 755.208334C451.388888 788.767303 478.593809 815.972222 512.152778 815.972222C545.711747 815.972222 572.916666 788.767303 572.916666 755.208334L572.916666 415.794228L712.241775 555.119334C735.97155 578.849109 774.445116 578.849109 798.174891 555.119334C821.904666 531.389563 821.904666 492.915994 798.174891 469.186219z"
+        fill="#666666"
+      ></path>
+    </svg>
+  </icon-wrapper>
+</template>
+<script lang="ts">
+import { defineComponent } from 'vue';
+import iconWrapper from '../components/base.vue';
+export default defineComponent({
+  name: 'FileTransfer',
+  components: { iconWrapper },
+  props: {
+    size: {
+      type: String || Number,
+      default: '1em',
+    },
+    fill: {
+      type: String,
+      default: 'currentColor',
+    },
+    rotate: Number,
+    spin: Boolean,
+  },
+});
+</script>

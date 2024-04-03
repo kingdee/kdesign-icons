@@ -15,6 +15,7 @@ import {
   isTitle,
   formatCode,
   formatBasename,
+  removeStyleAttributes,
 } from "../utils";
 
 function generateCodefn() {
@@ -26,7 +27,7 @@ function generateCodefn() {
     let newStr = "";
     lines.forEach((line, index) => {
       if (isSvgStartTag(line)) {
-        newStr += replaceSize(line, "vue") + `\n`;
+        newStr += removeStyleAttributes(replaceSize(line, "vue") + `\n`);
       } else if (isPathStartTag(line)) {
         newStr += replaceFillAttr(line, "vue") + "\n";
       } else if (isComment(line) || isTitle(line)) {
