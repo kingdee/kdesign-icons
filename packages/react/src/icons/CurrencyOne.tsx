@@ -18,7 +18,7 @@ const CurrencyOne = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          id="1312-币别"
+          id="1312-币种"
           stroke="none"
           strokeWidth="1"
           fill="none"
