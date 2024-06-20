@@ -9,7 +9,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <g
-        id="1312-币种"
+        id="1312-币别"
         stroke="none"
         stroke-width="1"
         fill="none"
